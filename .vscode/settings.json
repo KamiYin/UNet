@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "C:\\Project\\Anaconda3\\envs\\learn_pytorch\\python.exe",
+    "python.linting.flake8Args": ["--max-line-length=256" ]
+}
