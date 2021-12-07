@@ -50,6 +50,7 @@ def train_fun(img_path, label_path, val_path, val_label_path,  # 训练函数
     model = Unet(3, 1).to(device)  # 装载模型,输入为三通道，输出为单通道
 
     optimizer = torch.optim.Adam(model.parameters())  # 定义优化器
+    # 学习率以及动量可以在此处定义，示例：optimizer = torch.optim.Adam(model.parameters(), lr=1e-3, momentum=0.9) ps:未经验证，有问题的小伙伴可以在Issues中探讨
     train_loss, val_loss = [], []  # 记录全程的Loss变化
     batch_num = 0
     for i in range(epoch):
